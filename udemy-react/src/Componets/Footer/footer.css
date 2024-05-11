@@ -1,0 +1,83 @@
+
+.footersiz1{
+    background-color: rgb(28,29,31);
+    color: white;
+    /* border: 3px dotted rgb(254, 80, 0); */
+    padding: 25px 40px 25px 40px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 50px;
+    }
+    
+    .footbox1 {
+        /* background-color: rgba(240, 255, 255, 0.336); */
+        display: flex;
+        justify-content:flex-start;
+        padding: 0 0 50px 0;
+        /* border: 2px dotted green; */
+    }
+    
+    .footbox1 > div{
+        padding: 0 130px 0 0;
+    }
+    
+    
+    .footbox1 > div > a >  span {
+        display: block;
+        padding: 6px;
+        color: white;
+        /* margin-right: 50px; */
+        /* border: 1px dotted yellow; */
+    }
+    
+    
+    .footbox1 >div > a> span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    
+    #langsz1{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        border: 1px solid white;
+        height: 40px;
+        padding: 8px 20px;
+        position: absolute;
+        right: 0;
+        margin-right: 40px;
+    }
+    
+    #go1{
+        margin-right: 8px;
+    }
+    
+    .footbox1>#langsz1:hover{
+    background-color: rgba(139, 174, 191, 0.182);
+    }  
+    .footbox1 >#langsz1 > span:hover{
+    text-decoration: none;
+    }  
+    
+    
+    
+    
+    .footbox2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 5px 15px 15px;
+    /* border: 1px dotted rgb(221, 9, 9); */
+    }
+    
+    
+    .footbox2 > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #copy1{
+        font-size: 14px;
+    }
+    
