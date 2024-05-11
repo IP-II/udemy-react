@@ -1,0 +1,96 @@
+.consn5{
+    width: 86%;
+    /* border: 3px solid powderblue; */
+    padding: 50px 0 0 0;
+    margin: auto;
+}
+
+#ae1{
+font-size: 32px;
+font-weight: 700;
+color: #1c1d1f;
+line-height: 40px;
+font-family: SuisseWorks, Georgia, Times, "times new roman", serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+margin-bottom: 15px;
+
+    text-align: left;
+    margin-right: auto;
+
+
+}
+
+#ae2{
+font-size: 19px;
+font-weight: 400;
+color: #1c1d1f;
+line-height: 17px;
+font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+margin-bottom: 15px;
+text-align: left;
+margin-right: auto;
+}
+
+#ae3{
+    /* border: 2px dotted red; */
+    margin-bottom: 10px;
+    width: 100%;
+    /* height: 24px;
+    overflow: hidden; */
+    text-align: left;
+    margin-right: auto;
+}
+
+#ae3 > span{
+font-size: 16px;
+font-weight: 700;
+color: #64666b;
+line-height: 19px;
+padding: 0 10px 0 5px;
+font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+margin-bottom: 15px;
+cursor: pointer;
+}
+
+#ae3 > span:hover{
+    color: black;
+}
+#ae3 > #jpy{
+    color: black;
+}
+
+/* #ae3i{
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-top: -25px;
+    color: blue;
+} */
+
+.aex4{
+    border: 1px solid rgba(151, 151, 151, 0.867);
+    padding: 25px;
+    text-align: left;
+    margin-right: auto;
+}
+
+#ae4{
+font-size: 24px;
+font-weight: 700;
+color: #1c1d1f;
+line-height: 29px;
+/* padding: 0 10px 0 5px; */
+font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+margin-bottom: 10px;
+}
+
+#ae5{
+font-size: 16px;
+font-weight: 400;
+color:#0c0c0c;
+line-height: 22px;
+/* padding: 0 10px 0 5px; */
+font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+margin-bottom: 18px;
+width: 54%;
+
+}

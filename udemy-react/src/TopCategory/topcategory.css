@@ -1,0 +1,41 @@
+
+.cat35{
+    display: block;
+    width: 100%;
+    margin: auto;
+    /* border: 2px dotted red; */
+    /* padding: 0px 90px 0 90px; */
+    padding: 20px 105px 20px 105px;
+}
+
+.cat36{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px 20px;
+    overflow: hidden;
+}
+
+.cat36 > div >img{
+    display: block;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+.cat36 > div > p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(45, 45, 45);
+}
+
+#ae122{
+    /* margin-left: 20px; */
+font-size: 24px;
+font-weight: 700;
+color: #1c1d1f;
+line-height: 29px;
+/* padding: 0 10px 0 5px; */
+font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
+margin-bottom: 10px;
+}
+
