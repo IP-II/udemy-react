@@ -36,7 +36,6 @@ color: #1c1d1f;
 line-height: 23px;
 font-family: "udemy sans", "sf pro text", -apple-system, BlinkMacSystemFont, Roboto, "segoe ui", Helvetica, Arial, sans-serif, "apple color emoji", "segoe ui emoji", "segoe ui symbol";
 margin-bottom: 25px;
-
 }
 
 .ae14{
@@ -79,11 +78,9 @@ margin-bottom: 25px;
     font-weight:600;
     color:rgb(44, 44, 44);
     text-align: left;
-    margin-right: 0;
-    
+    /* margin-right: 100px; */
 }
 
 #ae15:hover{
     background-color:rgba(132, 132, 132, 0.115);
 }
-
