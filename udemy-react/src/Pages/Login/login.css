@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+   body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h1, h2 {
+    font-family:SuisseWorks
+}
+
+    
+   #sign_up {
+       background: #1c1d1f;
+       border: 1px solid black;
+       width: 90px;
+       margin: 10px 3px;
+       font-weight: bold;
+       font-size: 0.8rem;
+   }
+   #log_in {
+       background: white;
+       border: 1px solid black;
+       width: 90px;
+       margin: 10px auto;
+       font-weight: bold;
+       font-size: 0.8rem;
+   }
+   #cart {
+       background: white;
+       border: 0px solid black;
+   }
+   #cart > img {
+    width: 30px;
+       height: 30px;
+   }
+   #globe {
+    background: white;
+       border: 1px solid black;
+       margin: 10px 3px;
+   }
+   #globe >img {
+
+    width: 20px;
+       height: 20px;
+   }
+   * {
+        margin: 5px;
+    }
+
+#sign_up_page{
+display: grid;
+align-items: center;
+gap: 2%;
+margin-left: 35%;
+margin-right: 35%;
+
+}
+#top{
+display: grid;
+grid-template-rows: 10% 70%;
+gap: 15%;
+}
+.already{
+/* align-items: center; */
+display: flex;
+gap: 2%;
+text-align: center;
+
+}
+.name{
+padding: 3%;
+font-size: 20px;
+}
+.sign{
+padding: 3%;
+background-color:#a435f0;
+color: white;
+font-weight: 700;
+font-size: 20px;
+border: none;
+}
+.color_1{
+/* color: black; */
+text-decoration: none;
+}
+
+#log_in > a {
+    color:black;
+    text-decoration: none;
+}
+#sign_up > a {
+    color:white;
+    text-decoration: none;
+}
+
+.forgot{
+    color: #a435f0;
+}

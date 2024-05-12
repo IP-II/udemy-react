@@ -1,0 +1,37 @@
+#sign_up_page {
+    display: grid;
+    align-items: center;
+    gap: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#top {
+    display: grid;
+    grid-template-rows: 10% 70%;
+    gap: 15%;
+}
+
+.already {
+    /* align-items: center; */
+    display: flex;
+}
+
+.name {
+    padding: 3%;
+    font-size: 16px; /* Reduced font size */
+}
+
+.sign {
+    padding: 3%;
+    background-color: #a435f0;
+    color: white;
+    font-weight: 700;
+    font-size: 16px; /* Reduced font size */
+    border: none;
+}
+
+.color_1 {
+    color: purple; /* Changed color to purple */
+    text-decoration: underline; /* Underlined the link */
+}
