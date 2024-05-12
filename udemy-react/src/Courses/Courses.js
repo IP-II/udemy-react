@@ -1,5 +1,8 @@
 import React from 'react';
 import './courses.css'
+import CourseList from '../Componets/CourseList/CourseList';
+import CoursesContainer from '../Componets/CourseList/CoursesContainer';
+
 const Courses = () => {
     const webx1 = () => {
         // Function for handling Web Development click event
@@ -35,6 +38,9 @@ const Courses = () => {
                 <div>
                     <a id="ae6" href="#"><button id="ae7">Explore Python</button></a>
                 </div>
+           
+            {/* <CourseList /> */}
+            <CoursesContainer />
             </div>
         </div>
     );

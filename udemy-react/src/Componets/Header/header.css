@@ -1,122 +1,138 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
 
-    background-color: rgb(255,255,255);
+body {
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    /* border: 2px dotted powderblue; */
+    margin: 0; /* Add margin: 0; to ensure no default margin is applied */
 }
 
-a{
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-/* ------------------------HEADER--------------------------------------- */
-.navbarsz{ 
-    display: flex; 
-    justify-content:space-around;
+.navbarsz {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    /* border: 2px dotted red; */
     padding: 10px 20px;
     box-shadow: 1px 1px 5px grey;
     width: 100%;
     height: 71px;
 }
 
-.navbarsz > .navsz1{
-display: flex; 
-justify-content:space-around;
-align-items: center;
-width: 15%;
+.navbarsz > .navsz1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
 }
 
-.navbarsz > .navsz2{
-width: 50%;
+.navbarsz > .navsz2 {
+    width: 50%;
 }
 
-.navbarsz > .navsz3{
-display: flex; 
-justify-content:space-around;
-align-items: center;
-width: 45%;
+.navbarsz > .navsz3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%; /* Adjusted width from 45% to 35% */
 }
 
-.navbarsz > div > a>span:hover{
-cursor: pointer;
-color:RGB(86, 36, 208);
-} 
-#imgslogo1{
+.navbarsz > div > a > span:hover {
+    cursor: pointer;
+    color: RGB(86, 36, 208);
+}
+
+#imgslogo1 {
     width: 90px;
     height: 35px;
     cursor: pointer;
     margin-right: 15px;
 }
 
-#searchIcon{
+#searchIcon {
     font-size: 24px;
     position: absolute;
     z-index: 3;
     margin-left: 50px;
     margin-top: 12px;
     color: rgb(100, 100, 100);
-    
 }
-#search{
+
+#search {
     position: relative;
     z-index: 2;
-
-    background-color: rgb(247,249,250);
+    background-color: rgb(247, 249, 250);
     height: 50px;
     border-radius: 100px;
-    
     padding-left: 55px;
     border: 1px solid black;
-
     font-size: 14px;
     line-height: 19.6px;
     font-weight: 400;
-
     width: 90%;
     margin-right: 5px;
     margin-left: 30px;
     overflow: hidden;
 }
 
-
-#search:focus{
-    background-color: rgb(247,249,250);
+#search:focus {
+    background-color: rgb(247, 249, 250);
     font-size: 14px;
 }
 
-#sz4{
-border: 1px solid black;
-padding: 8px 17px;
-font-weight: 600;
+#sz4 {
+    border: 1px solid black;
+    padding: 8px 17px;
+    font-weight: 600;
 }
 
-#sz4:hover{
-background-color: rgba(236, 236, 236, 0.803);
-color: black;
+#sz4:hover {
+    background-color: rgba(236, 236, 236, 0.803);
+    color: black;
 }
 
-#sz5{
-border: 1px solid black;
-padding: 8px 17px;
-background-color: black;
-color: white;
-font-weight: 600;
+#sz5 {
+    border: 1px solid black;
+    padding: 8px 17px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
 }
 
-#sz6{
-border: 1px solid black;
-padding: 5px 6px;
+#sz5 {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 8px 17px;
+    background-color: black; /* Adjust to match Udemy's color scheme */
+    color: #fff; /* White text color */
+    font-weight: 600;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
-#sz6:hover{
-background-color: rgba(236, 236, 236, 0.803);
-color: black;
+
+#sz5:hover {
+    background-color: #333; /* Darker color on hover */
 }
+#sz6 {
+    display: inline-block;
+    border: 1px solid black; /* Add border */
+    border-radius: 4px; /* Optional: Add border radius for rounded corners */
+    padding: 5px 6px;
+}
+.navbarsz {
+    font-size: 14px; /* Set the font size for the entire header */
+    /* Other existing styles */
+}
+
+.navbarsz > div > a > span {
+    font-size: 14px; /* Set the font size for the spans within the header */
+    /* Other existing styles */
+}
+
+

@@ -9,7 +9,7 @@ const Header = () => {
         <header>
             <div className="navbarsz">
                 <div className="navsz1">
-                    <a href="./index.html"><img id="imgslogo1" src={logo} alt="logo" width="100"/></a>
+                    <a href="/"><img id="imgslogo1" src={logo} alt="logo" width="100"/></a>
                     <div className="jshv1">
                         <a href="#"><span>Categories</span></a>
                     </div>
@@ -22,8 +22,8 @@ const Header = () => {
                     <a href="#"><span id="sz-7">Udemy Business</span></a>
                     <a href="#"><span id="sz-8">Tech on Udemy</span></a>
                     <a href="#"><span id="ssz1p" className="material-symbols-outlined"><ShoppingCartOutlinedIcon /></span></a>
-                    <a href="login.html"><span id="sz4">Login</span></a>
-                    <a href="signup.html"><span id="sz5">Sign up</span></a>
+                    <a href="login"><span id="sz4">Login</span></a>
+                    <a href="signup"><span id="sz5">Sign up</span></a>
                     <a href="#"><span id="sz6" className="material-symbols-outlined"><LanguageOutlinedIcon /></span></a>
                 </div>
             </div>

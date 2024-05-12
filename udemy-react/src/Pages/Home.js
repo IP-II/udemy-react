@@ -15,6 +15,7 @@ const Home = () => {
       <Carousel />
     <Banner />
     <Courses />
+
     <TopCategory />
 
       <FeaturedTopics />
