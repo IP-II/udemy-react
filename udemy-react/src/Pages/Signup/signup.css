@@ -4,6 +4,7 @@
     gap: 2%;
     margin-left: 35%;
     margin-right: 35%;
+    font-size: 14px; /* Reduced font size for the entire sign-up page */
 }
 
 #top {
@@ -13,13 +14,13 @@
 }
 
 .already {
-    /* align-items: center; */
     display: flex;
+    font-size: 12px; /* Reduced font size for the "already have an account" section */
 }
 
 .name {
     padding: 3%;
-    font-size: 16px; /* Reduced font size */
+    font-size: 10px; /* Further reduced font size for the input placeholder */
 }
 
 .sign {
@@ -27,11 +28,15 @@
     background-color: #a435f0;
     color: white;
     font-weight: 700;
-    font-size: 16px; /* Reduced font size */
+    font-size: 14px; /* Keep the font size the same for the sign-up button */
     border: none;
 }
 
 .color_1 {
-    color: purple; /* Changed color to purple */
-    text-decoration: underline; /* Underlined the link */
+    color: purple;
+    text-decoration: underline;
+    font-size: 15px; /* Keep the font size the same for the link */
+}
+.text-danger{
+    color: red;
 }
