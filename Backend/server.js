@@ -65,7 +65,7 @@ app.post('/login', (req, res) => {
         return res.status(400).json({ error: "Missing required fields" });
     }
 
-    const sql = "SELECT name FROM login WHERE `email` = ? AND `password` = ?";
+    const sql = "SELECT * FROM login WHERE `email` = ? AND `password` = ?";
     
     db.query(sql, [email, password], (err, data) => {
         if (err) {
@@ -75,6 +75,7 @@ app.post('/login', (req, res) => {
         if (data.length > 0) {
             console.log("Login successful");
             return res.json("Success");
+           console.log(res.data)
         } else {
             console.log("Login failed");
             return res.json("Fail");
