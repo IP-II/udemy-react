@@ -4,22 +4,46 @@ import Header from '../../Componets/Header/Header';
 import Footer from '../../Componets/Footer/Footer';
 import { Link } from 'react-router-dom';
 import Validation from './LoginValidation'; // Corrected import statement
+import axios from 'axios';
+import err from '../Signup/Signup';
+import useNavigate from '../Signup/Signup';
+// 
 
 function Login(){
     const [values, setValues] = useState({
         email: '',
         password: ''
     });
+    
+    const navigate = useNavigate();
+
     const [errors, setErrors] = useState([]);
 
-    const handleInput = (event) => {
-        setValues(prev => ({...prev, [event.target.name]: event.target.value})); // Fixed setting value as string, not array
-    };
 
+    const handleInput = (event) => {
+        const { name, value } = event.target;
+        setValues(prev => ({...prev, [name]: value}));
+    };
+    
     const handleSubmit = (event) => {
         event.preventDefault();
-        setErrors(Validation(values)); // Corrected function call to Validation(values)
+        const validationErrors = Validation(values);
+        setErrors(validationErrors);
+    
+        if (validationErrors.email === "" && validationErrors.password === "") {
+            axios.post('http://localhost:8081/login', values)
+                .then(res => {
+                    console.log(res);
+                    if (res.data === "Success") {
+                        navigate('/loginhome');
+                    } else {
+                        alert("Invalid email or password"); // Inform the user about invalid credentials
+                    }
+                })
+                .catch(error => console.log(error));
+        }
     };
+    
 
     return (
         <div>
@@ -34,13 +58,17 @@ function Login(){
                         <input id="email"
                             className="name" type="email" placeholder="Email" onChange={handleInput} name='email' />
 
-                        <span>{errors.email && <span className='text-danger'> {errors.email}</span>}</span> {/* Added missing closing span tag */}
+                        {errors.email && <span className='text-danger'> {errors.email}</span>}
 
                         <input id="pass" className="name" type="password" placeholder="Password" onChange={handleInput} name='password' />
 
-                        <span>{errors.password && <span className='text-danger'> {errors.password}</span>}</span> {/* Added missing closing span tag */}
+                        {errors.password && <span className='text-danger'> {errors.password}</span>}
+                        <br />  <br />
+
+                       
 
                         <button type='submit' id="sign-btn" className="sign">Log In</button>
+
 
                         <div className="already">
                             <h3>OR</h3>

@@ -28,10 +28,12 @@ function Signup(){
         setErrors(err);
         if (err.name === "" && err.email === "" && err.password === "") {
             axios.post('http://localhost:8081/signup', values)
-                .then(res => {
+                .then(res => 
+                    {
+                    console.log(res);
                     navigate('/login');
                 })
-                .catch(error => console.log(error)); // Change err to error and log error object
+                .catch(err => console.log(err)); // Change err to error and log error object
         }
     };
     
@@ -57,13 +59,15 @@ function Signup(){
 <span>{errors.password && <span className='text-danger'> {errors.password}</span>}</span> {/* Added missing closing span tag */}
 
             <br />
+        
+
             <button type='submit' id="sign-btn" className="sign">Sign Up</button>
         
         <p>By signing up, you agree to our Terms of Use and Privacy Policy.</p>
         <div></div>
         <div className="already">
             <h3>Already have an account?</h3>
-            <Link to="/" className="color_1">Log In</Link>        </div> 
+            <Link to="/login" className="color_1">Log In</Link>        </div> 
             </form>
     </div>
     <br />  <br />  <br />
