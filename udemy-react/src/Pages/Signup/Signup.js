@@ -14,7 +14,7 @@ function Signup(){
         password: ''
     });
 
-    const navigate = useNavigate();
+    const {navigate} = this.props.navigation;
     const [errors, setErrors] = useState([]);
 
     const handleInput = (event) => {
