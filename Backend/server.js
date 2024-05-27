@@ -26,7 +26,7 @@ const createLoginTable = `CREATE TABLE IF NOT EXISTS login (
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
-    role ENUM('user', 'admin') NOT NULL DEFAULT 'user'
+    role ENUM('user', 'admin') NOT NULL DEFAULT 'admin'
 )`;
 
 db.query(createLoginTable, (err, data) => {
@@ -73,11 +73,18 @@ app.post('/login', (req, res) => {
             return res.status(500).json({ error: "Error executing login query" });
         }
         if (data.length > 0) {
+            const {password, ...rest} = data[0]
+            
             console.log("Login successful");
-            return res.json("Success");
-           console.log(res.data)
+            
+            return res.json({
+                message : "Success",
+                user : rest
+            });
+           
         } else {
             console.log("Login failed");
+            
             return res.json("Fail");
         }
     });

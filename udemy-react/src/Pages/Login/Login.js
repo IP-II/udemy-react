@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./login.css"; // Import CSS file for login styles
 import Header from "../../Componets/Header/Header";
 import Footer from "../../Componets/Footer/Footer";
 import Validation from "./LoginValidation"; // Corrected import statement
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
+import { DataContext } from "../../Componets/context/DataProvider";
 // import err from "../Signup/Signup";
 
 function Login() {
@@ -13,7 +14,10 @@ function Login() {
     password: "",
   });
 
+  const [userData, setUserData] = useContext(DataContext)
+
   const navigate = useNavigate();
+  // const {navigate} = this.props.navigation;
   const [errors, setErrors] = useState([]);
   
 
@@ -31,16 +35,19 @@ function Login() {
       axios.post("http://localhost:8081/login", values)
         .then(res => {
         //   console.log(res);
-          if (res.data === "Success") {
-            navigate('/loginhome');
+          if (res.data.message === "Success") {
+            console.log(res.data.user)
+            setUserData(res.data.user)
+            
           } else {
-            alert("Invalid email or password");
+            return alert("Invalid email or password");
           }
+          navigate('/loginhome')
         })
         .catch((error) => console.error(error));
     }
   };
-
+console.log(userData)
   return (
     <div>
       <Header />
